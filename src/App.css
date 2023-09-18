@@ -94,11 +94,9 @@
 }
 .ReducerStyle input {
   padding: 10px;
-  border: none;
   border-radius: 10px;
-  outline: none;
+  border: none;
   text-align: center;
-
 }
 .ReducerStyle button {
   padding: 10px;
