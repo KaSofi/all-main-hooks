@@ -20,7 +20,7 @@ export const Audio = () => {
     return(
         <div className="AudioUseRefStyle" >
         <h3 style={ThemeList} >Music player</h3>
-        <h4>useRef()</h4>
+        <h4>useRef() useContext()</h4>
         <audio src={song} loop='loop' ref={audioRef}></audio>
             <button onClick={() => updateMusic()}>{musicPlay? 'play' : 'pause'}</button>
         </div>

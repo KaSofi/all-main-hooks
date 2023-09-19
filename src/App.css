@@ -171,3 +171,33 @@
 h4 {
   color: rgb(234, 15, 15);
 }
+.UseMemoFilteringStyle {
+  background-color: crimson;
+  width: 300px;
+  height: 270px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.UseMemoFilteringStyle p {
+  line-height: 0.3;
+}
+.UseMemoFilteringStyle input {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+}
+.UseMemoFilteringStyle button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(50, 158, 50);
+}
+.MemoSeacher {
+  background-color: rgb(50, 158, 50);
+  max-width: 270px;
+  border-radius: 10px;
+  margin: 0 auto;
+}

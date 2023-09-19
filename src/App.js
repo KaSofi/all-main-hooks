@@ -4,8 +4,9 @@ import UseReducer from './UseReducer';
 import { Reducer } from './Reducer';
 import { ReducerMultiply } from './ReducerMultiply';
 import { Timer } from './Timer';
-
 import React, { useState } from 'react';
+import MemoFilter from './Memofilter';
+
 
 export const ContextTheme = React.createContext();
 
@@ -28,6 +29,7 @@ function App() {
         </div>
         <div className="App">
           <Timer/>
+          <MemoFilter/>
           <ContextTheme.Provider value={theme}>
             <ReducerMultiply/>
           </ContextTheme.Provider>

@@ -8,6 +8,7 @@ export const Reducer = () => {
         inputRef.current.focus()
     }
 
+
     return(
         <div className="ReducerStyle">
             <h3>Where do yo wanna go?</h3>
