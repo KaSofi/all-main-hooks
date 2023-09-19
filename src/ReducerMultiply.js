@@ -1,4 +1,5 @@
-import { useReducer } from "react"
+import { useContext, useReducer } from "react"
+import { ContextTheme } from "./App";
 
 function reducer(state, action) {
     switch(action.type) {
@@ -10,12 +11,22 @@ function reducer(state, action) {
 
 export const ReducerMultiply = () => {
     const [state, dispatch] = useReducer(reducer, {count: 10})
+
+    const theme = useContext(ContextTheme)
+
+    const changeButtonColor = {
+        color: theme ? 'black' : 'green',
+        backgroundColor: theme ? 'white' : '#cef4ce'
+    }
+
+
+
     return(
         <div className="ReducerCounterStyle">
         <h3>useReducer() counter(*5 & /5)</h3>
             <p>{state.count}</p>
-            <button onClick={ () => dispatch( {type:'Multiply'} )}>Multiply</button>
-            <button onClick={ () => dispatch( {type:'Devided'} )}>Devided</button>
+            <button onClick={ () => dispatch( {type:'Multiply'} )} style={changeButtonColor}>Multiply</button>
+            <button onClick={ () => dispatch( {type:'Devided'} )} style={changeButtonColor}>Devided</button>
         </div>
     )
 }

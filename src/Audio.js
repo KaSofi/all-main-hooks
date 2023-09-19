@@ -1,5 +1,6 @@
-import { useRef, useState } from "react"
+import { useContext, useRef, useState } from "react"
 import song from './assets/song.mp3'
+import { ContextTheme } from "./App";
 
 
 export const Audio = () => {
@@ -10,9 +11,15 @@ export const Audio = () => {
         musicPlay ? audioRef.current.play() : audioRef.current.pause()
     }
 
+    const theme = useContext(ContextTheme);
+
+    const ThemeList = {
+        color: theme ? 'brown' : 'white'
+    }
+
     return(
-        <div className="AudioUseRefStyle">
-        <h3>Music player</h3>
+        <div className="AudioUseRefStyle" >
+        <h3 style={ThemeList} >Music player</h3>
         <audio src={song} loop='loop' ref={audioRef}></audio>
             <button onClick={() => updateMusic()}>{musicPlay? 'play' : 'pause'}</button>
         </div>

@@ -1,13 +1,29 @@
 * {
   box-sizing: border-box;
 }
+.MainPageStyle {
+  height: 100vh;
+}
+.ContextThemeStyle {
+  display: flex;
+  justify-content: center;
+}
+.ContextThemeStyle button {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(161, 159, 159);
+  color: white;
+  font-size: 25px;
+}
 .App {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .TimerReducerStyle {
-  background-color:  rgb(137, 224, 250);;
+  background-color:  rgb(137, 224, 250);
   width: 300px;
   height: 200px;
   text-align: center;
@@ -94,11 +110,9 @@
 }
 .ReducerStyle input {
   padding: 10px;
-  border: none;
   border-radius: 10px;
-  outline: none;
+  border: none;
   text-align: center;
-
 }
 .ReducerStyle button {
   padding: 10px;
@@ -110,7 +124,7 @@
   box-shadow: 0 1px 3px 1px white;
 }
 .ReducerCounterStyle {
-  background-color: rgb(206, 244, 206);
+  background-color: #cef4ce;
   width: 300px;
   height: 200px;
   margin: 10px;
@@ -139,6 +153,7 @@
   width: 300px;
   height: 200px;
   border-radius: 10px;
+  border: 2px solid white;
   text-align: center;
   margin: 10px;
 }
