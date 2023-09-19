@@ -24,7 +24,7 @@ function App() {
   return (
     <div style={ThemeList} className='MainPageStyle'>
         <div className='ContextThemeStyle'>
-          <button onClick={changeTheme}>change theme</button>
+          <button onClick={changeTheme}>change theme / useContext()</button>
         </div>
         <div className="App">
           <Timer/>
