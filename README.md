@@ -1,4 +1,4 @@
-Ppps using all main hooks:
+Apps using all main hooks:
 1. useState()
 2. useEffect()
 3. useRef()
