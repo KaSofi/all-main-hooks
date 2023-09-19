@@ -12,7 +12,8 @@ function UseReducer() {
 
     return(
         <div className="UseReducerPreviousCounterStyle">
-        <h3>Previous state counter</h3>
+            <h3>Previous state counter</h3>
+            <h4>useEffect() UseReducer()</h4>
             <p>current: {count}</p>
             <p>previous: {previouseCount}</p>
             <button onClick={ () => setCount( count + 1 )}>NEXT</button>

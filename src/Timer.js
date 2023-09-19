@@ -32,7 +32,8 @@ export const Timer = () => {
 
     return(
         <div className="TimerReducerStyle">
-        <h3>Timer</h3>
+            <h3>Timer</h3>
+            <h4> useReducer() useRef() useEffect()</h4>
             <p><span>{state.time}</span> seconds</p>
             <button onClick={ () => dispatch( {type: 'Start'} )}>Start</button>
             <button onClick={ () => dispatch( {type: 'Pause'} )}>Pause</button>

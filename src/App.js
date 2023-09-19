@@ -23,7 +23,6 @@ function App() {
   
   return (
     <div style={ThemeList} className='MainPageStyle'>
-        
         <div className='ContextThemeStyle'>
           <button onClick={changeTheme}>change theme</button>
         </div>

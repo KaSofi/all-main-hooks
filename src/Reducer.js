@@ -10,7 +10,8 @@ export const Reducer = () => {
 
     return(
         <div className="ReducerStyle">
-        <h3>Where do yo wanna go?</h3>
+            <h3>Where do yo wanna go?</h3>
+            <h4>useReducer()</h4>
             <input type="text" 
                     value={text}
                     ref={inputRef}

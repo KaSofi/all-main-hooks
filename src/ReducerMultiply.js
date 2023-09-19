@@ -19,11 +19,10 @@ export const ReducerMultiply = () => {
         backgroundColor: theme ? 'white' : '#cef4ce'
     }
 
-
-
     return(
         <div className="ReducerCounterStyle">
-        <h3>useReducer() counter(*5 & /5)</h3>
+            <h3>counter(*5 & /5)</h3>
+            <h4>useReducer() useContext()</h4>
             <p>{state.count}</p>
             <button onClick={ () => dispatch( {type:'Multiply'} )} style={changeButtonColor}>Multiply</button>
             <button onClick={ () => dispatch( {type:'Devided'} )} style={changeButtonColor}>Devided</button>
