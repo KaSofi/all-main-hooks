@@ -1,3 +1,11 @@
+Ppps using all main hooks:
+1. useState()
+2. useEffect()
+3. useRef()
+4. useReduce()
+5. useMemo()
+6. useContext()
+7. useCallBack()
 
 ![6 (3)](https://github.com/KaSofi/all-main-hooks/assets/103929930/5dee9560-ab09-4ff0-8969-ed5f38783c61)
 
